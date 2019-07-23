@@ -104,9 +104,9 @@ font-weight: normal;
 }
 .poster_body_wrap{
 position: absolute;
-top: calc(1189mm * 0.23);
+top: calc(1189mm * 0.24);
 width: 90%;
-height: calc(1189mm * 0.65);
+height: calc(1189mm * 0.63);
 padding-top: calc(1189mm * 0.01);
 padding-bottom: calc(1189mm * 0.01);
 margin-left: 5%;
@@ -277,7 +277,7 @@ font-size: 20pt;
 }
  
 #new_refs {
-  margin-top: 95%;
+  margin-top: 93%;
   margin-left: 5%;
   margin-right: 5%;
   
@@ -313,6 +313,7 @@ font-size: 20pt;
   float: left;
   margin-right: 2%;
   height: 170px;
+  width: 170px;
   border-radius: 50%;
 }
 </style>
@@ -349,12 +350,14 @@ font-size: 20pt;
 <div class='poster_body'>
 <div id="introduction" class="section level1">
 <h1>Introduction</h1>
-<p>Data School can teach and old dog new tricks. If I am not away on fieldtrips you can find me processing soil samples in the Butler Laboratory on Black Mountain, ACT. Before Data School I had heard the terms; R, Python, Bowen, Pearcey, ggplot, Data Access Portal &amp; machine learning. I was unable to learn them as was I too busy working to deliver project milestones on time, and balancing work &amp; family life.</p>
+<p>Data School can teach an old dog new tricks.
+If I am not away on fieldtrips you can find me processing soil samples in the Butler Laboratory on Black Mountain, ACT.
+Before Data School I had heard the terms; R, Python, Bowen, Pearcey, ggplot, Data Access Portal &amp; machine learning. I was unable to learn them as was I too busy working to deliver project milestones on time, and balancing work &amp; family life.</p>
 </div>
 <div id="my-synthesis-project" class="section level1">
 <h1>My Synthesis Project</h1>
 <p>Goal: Pipeline for processing core sensing platform (CSP) data in a reproducible automated way.</p>
-<p>This involved generating data by scanning 22cores from Macquarie Bogan Field-study, retrieving the data from the CSP Linux computer and storing data on Bowen. After which I needed to create a tidy data frame collecting data from directory names, csv file containing gamma &amp; spectra data, other files with gamma calibration &amp; GPS data.</p>
+<p>This involved generating data by scanning 22 cores from Macquarie Bogan Field-study, retrieving the data from the CSP Linux computer and storing data on Bowen. After which I needed to create a tidy data frame collecting data from directory names, csv file containing gamma &amp; spectra data, other files with gamma calibration &amp; GPS data.</p>
 <p>The NIR spectra &amp; Gamma counts needed processing before storing in a tidy data format. The NIR spectra needed pre-processing steps to filter raw spectra and use existing soil-water library to estimate soil water content and correct spectra for soil moisture attenuation. Brendan Malone was a big help in guiding me through the spectra processing.</p>
 <p>Finally producing an R-Markdown report with tables &amp; graphs for each individual core.</p>
 </div>
@@ -366,15 +369,16 @@ font-size: 20pt;
 <p>R was used to process NIR spectra &amp; Gamma data.</p>
 <p>ggplot was used to visualise the core data.</p>
 <p>R-Markdown to produce report for each core.</p>
-<div id="favourite-tool-optional" class="section level2">
-<h2>Favourite tool (optional)</h2>
-<p>I have really enjoyed using R and surprised myself what I can achieve with it. Back in the lab I can see other uses for R in automating lab data analysis &amp; visualisation.</p>
-<p>ggplot is cool for data visualisation, but I am still learning new tricks to use it affectively.</p>
+<div id="favourite-tool" class="section level2">
+<h2>Favourite tool</h2>
+<p>I have really enjoyed using R and surprised myself what I can achieve with it.
+Back in the lab I can see other uses for R in automating lab data analysis &amp; visualisation.</p>
+<p>ggplot is cool for data visualisation, but I am still learning new tricks to use it effectively.</p>
 </div>
 </div>
 <div id="my-time-went" class="section level1">
 <h1>My time went …</h1>
-<p>The code to pull out the data for the initial data-frame took a lot of time, trying to get the right information from each directory title &amp; csv file. Also, the loop in the r code to correctly collect the data for the 22 cores from the 42 directories took a while to perfect.</p>
+<p>The code to pull out the data for the initial data-frame took a lot of time, trying to get the right information from each directory title &amp; csv file. Also, the loop in the R code to correctly collect the data for the 22 cores from the 42 directories took a while to perfect.</p>
 <p>All the pre-processing of the spectra data and the use of gamma data took a while to understand &amp; implement.</p>
 <p>When something didn’t work in the R coding my solution was to break it into little steps and make sure each step worked before moving onto next step. I had to do this when creating loops which worked. Also, Google is your friend in solving error messages.</p>
 <p>The best time to be creative and productive in solving any problems varied for me; morning, afternoon, a whole day. A few times I would put it aside and come back later and solved it quickly.</p>
@@ -386,15 +390,24 @@ font-size: 20pt;
 <p>Need to investigate if there are other ways to improve bulk density measurements with data from CSP.</p>
 <p>Investigate the package “inspectr” and any other packages that may be useful in processing and analysing spectra data.</p>
 <p>I didn’t use python in my Data school project, but I don’t want to lose this skill, I will have to make time use it. Also, machine learning is something I wish to continue investigating for larger datasets.</p>
-<p><br/> <br/> <br/></p>
-<strong>Images from a file</strong>
+<p><br/>
+<br/>
+<br/></p>
 <div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-1"></span>
 <img src="CoreScannerHead_160606.jpg" alt="Core Sensing Platform" width="80%" />
 <p class="caption">
 Figure 1: Core Sensing Platform
 </p>
 </div>
-<p><strong>Plots from R</strong> <img src="GMCL_Dataschool_Synthesis_Project_files/figure-html/standard-plot-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p><br/>
+<br/>
+<br/></p>
+<div class="figure" style="text-align: center"><span id="fig:standard-plot"></span>
+<img src="GMCL_Dataschool_Synthesis_Project_files/figure-html/standard-plot-1.png" alt="Example CSP data" width="100%" />
+<p class="caption">
+Figure 2: Example CSP data
+</p>
+</div>
 </div>
 <div id="my-data-school-experience" class="section level1">
 <h1>My Data School Experience</h1>
