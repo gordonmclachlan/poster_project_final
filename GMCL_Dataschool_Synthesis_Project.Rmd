@@ -46,7 +46,7 @@ Before Data School I had heard the terms; R, Python, Bowen, Pearcey, ggplot, Dat
 # My Synthesis Project
 Goal: Pipeline for processing core sensing platform (CSP) data in a reproducible automated way.
 
-This involved generating data by scanning 22cores from Macquaire Bogan Field-study, retrieving the data from the CSP Linux computer and storing data on Bowen. After which I needed to create a tidy data frame collecting data from directory names, csv file containing gamma & spectra data, other files with gamma calibration & GPS data.
+This involved generating data by scanning 22cores from Macquarie Bogan Field-study, retrieving the data from the CSP Linux computer and storing data on Bowen. After which I needed to create a tidy data frame collecting data from directory names, csv file containing gamma & spectra data, other files with gamma calibration & GPS data.
 
 The NIR spectra & Gamma counts needed processing before storing in a tidy data format. The NIR spectra needed pre-processing steps to filter raw spectra and use existing soil-water library to estimate soil water content and correct spectra for soil moisture attenuation. Brendan Malone was a big help in guiding me through the spectra processing.
 
@@ -58,7 +58,7 @@ All the skills used in this project were learnt from attending Data School.
 
 The Research Data Management Plan was important at the start to confirm what data I could use & how.
 
-Filezilla & Putty were important to retrieve data from CSP Linux computer.
+FileZilla & Putty were important to retrieve data from CSP Linux computer.
 
 R was used to process NIR spectra & Gamma data.
 
@@ -79,7 +79,7 @@ The code to pull out the data for the initial data-frame took a lot of time, try
 
 All the pre-processing of the spectra data and the use of gamma data took a while to understand & implement.
 
-When something didn't work in the R coding my solution was to break it into little steps and make sure each step worked before moving onto next step. I had to do this when creating loops which worked. Also Google is your friend in solving error messages. 
+When something didn't work in the R coding my solution was to break it into little steps and make sure each step worked before moving onto next step. I had to do this when creating loops which worked. Also, Google is your friend in solving error messages. 
 
 The best time to be creative and productive in solving any problems varied for me; morning, afternoon, a whole day. A few times I would put it aside and come back later and solved it quickly.
 
@@ -93,7 +93,7 @@ Need to investigate if there are other ways to improve bulk density measurements
 
 Investigate the package "inspectr" and any other packages that may be useful in processing and analysing spectra data.
 
-I didn't use python in my Data school project, but I don't want to lose this skill, so I will have to make time use it. Also, machine learning is something I wish to continue investigating for larger datasets.
+I didn't use python in my Data school project, but I don't want to lose this skill, I will have to make time use it. Also, machine learning is something I wish to continue investigating for larger datasets.
 
 
 
@@ -104,7 +104,7 @@ I didn't use python in my Data school project, but I don't want to lose this ski
 
 
 **Images from a file**
-```{r, echo=FALSE, fig.cap="Core Sensing Platform", out.width = '50%' }
+```{r, echo=FALSE, fig.cap="Core Sensing Platform", out.width = '80%' }
 knitr::include_graphics("CoreScannerHead_160606.jpg")
 #![]("CSP_photo1.png"){width=180px}
 ```
@@ -128,8 +128,8 @@ ggplot(VWC_gamma_dat_T078_P1, aes(x=core_depth_cm)) +
 
 
 # My Data School Experience
-Tony, Seija, & I have already given a brief talk about Data Access Portal & Research Data Management Plan to Butler Lab to encourage awareness & discussion. We have also been asked to talk to our group about our Data School experience & project at some time in the future.
+Tony, Seija, & I have already given a brief talk about Data Access Portal & Research Data Management Plan to Butler Lab to encourage awareness & discussion. We have also been asked to talk to our group about our Data School experience & project at sometime in the future.
 
-I was nervous about Data School and whether I would be able to handle it, but lessons were adjusted for everyone in the cohort, so everyone was able to learn. The teachers/tutors/mentors were very knowledgeable, helpful & wonderful. Data School was able to teach this old dog new tricks.
+I was nervous about Data School and whether I would be able to handle it, but lessons were adjusted, everyone in the cohort was able to learn. The teachers/tutors/mentors were very knowledgeable, helpful & wonderful. Data School was able to teach this old dog new tricks.
 
 I was encouraged by my group leader, Ben Macdonald, to apply for Data School. It has been a privilege to spend the time in Data School and learn these new skills. I can see other ways of automating the analysis & visualisation of data from soil physics measurements we make in the laboratory.
